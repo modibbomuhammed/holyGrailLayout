@@ -1,3 +1,46 @@
 body {
-    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+header {
+    background-color: #01B891;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    flex-basis: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #01B891;
+}
+
+article {
+    flex: 1 1 60%;
+}
+
+nav {
+    background-color: #869C9F;
+    flex: 1 1 20%;
+    order: -1;
+}
+
+aside {
+    background-color: #008EDC;
+    flex: 1 1 20%;
+}
+
+
+@media screen and (max-width: 600px){
+    article {
+        background-color: yellow;
+        order: -2;
+    }
+} 
+
+
