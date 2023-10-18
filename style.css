@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
 }
@@ -8,38 +8,43 @@ header {
     background-color: #01B891;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex: 1 1 5%;
 }
 
 main {
-    flex-basis: 80%;
+    flex-basis: 90%;
     display: flex;
     flex-wrap: wrap;
 }
 
 footer {
     background-color: #01B891;
+    flex: 1 1 5%;
 }
 
 article {
-    flex: 1 1 60%;
+    flex: 1 1 80%;
 }
 
 nav {
     background-color: #869C9F;
-    flex: 1 1 20%;
+    flex: 1 1 10%;
     order: -1;
 }
 
 aside {
     background-color: #008EDC;
-    flex: 1 1 20%;
+    flex: 1 1 10%;
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 640px){
     article {
-        background-color: yellow;
         order: -2;
+    }
+    main {
+        flex-direction: column;
     }
 } 
 
